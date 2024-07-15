@@ -57,6 +57,7 @@ main > section{
   color: #131313;
   font-size: 2.75rem;
   font-weight: 700;
+  padding: 20px 0px;
 }
 /* shared styles end here */
 header{
@@ -130,6 +131,27 @@ header{
   font-weight: 700;
   color: #FF900E;
 }
+/* facts relate styles */
+.fact-contents{
+  max-width: 500px;
+  margin: 60px 0px;
+  
+}
+
+.fact-card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 110px;
+}
+
+.fact-cards{
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  padding: 35px 30px;
+  text-align: center;
+}
+
+
 /* All styles end here */
 
 
@@ -156,6 +178,15 @@ header{
   .team-contents{
     padding: 0px 40px;
   }
+  /* fact section */
+  .fact-card-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    padding: 0px 44px;
+  }
+  .fact-contents{
+    padding: 0px 50px;
+  }
 }
 
 /* Responsive for medium devices */
@@ -170,5 +201,14 @@ header{
   }
   .team-contents{
     padding: 0px 40px;
+  }
+  /* fact section */
+  .fact-card-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding: 0px 44px;
+  }
+  .fact-contents{
+    padding: 0px 50px;
   }
 }
